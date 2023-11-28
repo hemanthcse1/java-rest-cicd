@@ -27,5 +27,10 @@ public class ProductController {
         return products;
     }
 
+    @DeleteMapping("/delete")
+    public void deleteProduct(@RequestBody Product product){
+         products.remove(product);
+    }
+
 
 }
