@@ -27,5 +27,11 @@ public class ProductController {
         return products;
     }
 
+    @PutMapping("/update")
+    public Product update(@RequestBody Product product){
+        products.add(product);
+            return product;
+    }
+
 
 }
