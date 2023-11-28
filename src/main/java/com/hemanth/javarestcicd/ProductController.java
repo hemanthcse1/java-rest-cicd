@@ -32,5 +32,11 @@ public class ProductController {
          products.remove(product);
     }
 
+    @PutMapping("/update")
+    public Product updateProduct(@RequestBody Product product){
+        products.add(product);
+        return product;
+    }
+
 
 }
